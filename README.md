@@ -147,25 +147,10 @@ The server will start on `http://localhost:5000` by default.
 
 ---
 
-### 3. **User Data**
-- **GET** `/api/users/me`  
-  Get details of the logged-in user.
-
----
-
 ## 🛡️ **Security Features**
 - Passwords are securely hashed using **bcrypt**.
 - Tokens are issued using **JWT**, ensuring secure session management.
 - Access control is implemented to restrict non-authenticated users from accessing resources.
-
----
-
-## 🙌 **Contributing**
-1. Fork the repository.
-2. Create your feature branch: `git checkout -b feature-name`.
-3. Commit your changes: `git commit -m 'Add some feature'`.
-4. Push to the branch: `git push origin feature-name`.
-5. Open a pull request.
 
 ---
 
