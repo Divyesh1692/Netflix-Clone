@@ -24,5 +24,9 @@ app.use("/api/v1/search", protectRoute, searchRoutes);
 // Database connection
 connectDB();
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the Netflix Clone API!");
+});
+
 // Export the app for Vercel serverless deployment
 export default app;
