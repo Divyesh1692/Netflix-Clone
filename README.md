@@ -1,59 +1,70 @@
 ### Netflix Clone Backend – README
 
----
-
 ## 📖 **Project Overview**
 
 This project is a **backend for a Netflix Clone** that provides features like **user authentication, movie search, and browsing functionalities**. Users can sign up, log in, search for movies, TV shows, or actors, and browse movie details. All interactions are secured using **JWT tokens** and **cookies**. The project is built using modern web technologies like **Node.js**, **Express**, **MongoDB**, and others.
 
 ---
 
+Vercel Deployment Link : https://netflix-clone-xi-seven-13.vercel.app/
+
+---
+
 ## 🚀 **Key Features**
 
-- **Authentication**:  
+- **Authentication**:
+
   - Sign up, log in, and log out functionalities.
   - Secure access to resources using **JWT tokens** and **cookies**.
   - Passwords are encrypted using **bcrypt** for added security.
 
-- **Movie Browsing**:  
+- **Movie Browsing**:
+
   - Search for movies, TV shows, or actors.
   - Access detailed information about movies and TV shows.
 
-- **Authorization**:  
+- **Authorization**:
+
   - Only logged-in users can browse movies and other resources.
   - Unauthorized users are restricted from accessing the content.
 
-- **Robust Database**:  
+- **Robust Database**:
+
   - Movie data and user credentials are stored and managed using **MongoDB**.
   - **Mongoose** is used for database modeling.
 
-- **Modern APIs**:  
+- **Modern APIs**:
   - **Axios** is used to fetch movie and TV show data from external APIs.
 
 ---
 
 ## 🛠️ **Tech Stack**
 
-- **Backend**:  
-  - Node.js  
-  - Express.js  
+- **Backend**:
 
-- **Authentication**:  
-  - JSON Web Tokens (JWT)  
-  - Cookies  
+  - Node.js
+  - Express.js
 
-- **Database**:  
-  - MongoDB  
-  - Mongoose  
+- **Authentication**:
 
-- **Security**:  
-  - Bcrypt for password hashing  
+  - JSON Web Tokens (JWT)
+  - Cookies
 
-- **HTTP Client**:  
-  - Axios  
+- **Database**:
 
-- **Others**:  
-  - JavaScript  
+  - MongoDB
+  - Mongoose
+
+- **Security**:
+
+  - Bcrypt for password hashing
+
+- **HTTP Client**:
+
+  - Axios
+
+- **Others**:
+  - JavaScript
 
 ---
 
@@ -62,22 +73,27 @@ This project is a **backend for a Netflix Clone** that provides features like **
 Follow these steps to set up and run the project locally.
 
 ### 1️⃣ Prerequisites
+
 Make sure you have the following installed on your system:
+
 - [Node.js](https://nodejs.org/) (v14 or higher)
 - [MongoDB](https://www.mongodb.com/) (running locally or on a cloud service like Atlas)
 
 ---
 
 ### 2️⃣ Clone the Repository
+
 ```bash
-git clone https://github.com/your-username/netflix-clone-backend.git
+git clone https://github.com/Divyesh1692/Netflix-Clone
 cd netflix-clone-backend
 ```
 
 ---
 
 ### 3️⃣ Install Dependencies
+
 Run the following command to install all necessary packages:
+
 ```bash
 npm install
 ```
@@ -85,7 +101,9 @@ npm install
 ---
 
 ### 4️⃣ Set Up Environment Variables
+
 Create a `.env` file in the project root and add the following variables:
+
 ```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
@@ -100,7 +118,9 @@ Replace `your_mongodb_connection_string` with your MongoDB URI and `your_jwt_sec
 ---
 
 ### 5️⃣ Start the Server
+
 Run the following command to start the server:
+
 ```bash
 npm start
 ```
@@ -112,9 +132,11 @@ The server will start on `http://localhost:5000` by default.
 ## 🔍 **API Endpoints**
 
 ### 1. **Authentication**
+
 - **POST** `/api/auth/signup`  
   Register a new user.  
-  **Body Parameters**:  
+  **Body Parameters**:
+
   ```json
   {
     "name": "John Doe",
@@ -125,7 +147,8 @@ The server will start on `http://localhost:5000` by default.
 
 - **POST** `/api/auth/login`  
   Log in a user.  
-  **Body Parameters**:  
+  **Body Parameters**:
+
   ```json
   {
     "email": "john@example.com",
@@ -139,15 +162,17 @@ The server will start on `http://localhost:5000` by default.
 ---
 
 ### 2. **Movies**
+
 - **GET** `/api/movies`  
-  Fetch a list of all movies (requires authentication).  
+  Fetch a list of all movies (requires authentication).
 
 - **GET** `/api/movies/search?query={search_term}`  
-  Search for movies, TV shows, or actors by name.  
+  Search for movies, TV shows, or actors by name.
 
 ---
 
 ## 🛡️ **Security Features**
+
 - Passwords are securely hashed using **bcrypt**.
 - Tokens are issued using **JWT**, ensuring secure session management.
 - Access control is implemented to restrict non-authenticated users from accessing resources.
@@ -155,13 +180,14 @@ The server will start on `http://localhost:5000` by default.
 ---
 
 ## 🧑‍💻 **Author**
+
 **Divyesh Variya** – [GitHub Profile](https://github.com/Divyesh1692)
 
 ---
 
 ## 🎉 **Acknowledgments**
+
 - Special thanks to **TMDB API** for movie and TV show data.
 - Inspired by Netflix's user-friendly interface and features.
 
 ---
-
